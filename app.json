@@ -33,6 +33,12 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "25eccd91-d120-45fc-b935-baa23e8cdabe"
+      }
+    },
+    "owner": "gust-infra"
   }
 }
