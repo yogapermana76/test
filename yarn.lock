@@ -869,6 +869,16 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.57.1.tgz#de633db3ec2ef6a3c89e2f19038063e8a122e2c2"
   integrity sha512-d9zaMRSTIKDLhctzH12MtXvJKSSUhaHcjV+2Z+GK+EEY7XKpP5yR4x+N3TAcHTcu963nIr+TMcCb4DBCYX1z6Q==
 
+"@expo-google-fonts/figtree@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@expo-google-fonts/figtree/-/figtree-0.2.3.tgz#0907510d4918935f5b1dbec929a04278a8bf284f"
+  integrity sha512-QUj2F553gAt/n2FA569Ga2Au8p5lcfblaoKCbGU73rK3xsevvHbZUIFDADQteqZaDkP554ykXeDTySmc1Qy6sw==
+
+"@expo-google-fonts/space-grotesk@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@expo-google-fonts/space-grotesk/-/space-grotesk-0.2.3.tgz#f2d4fdc167d4d659b2a0d91d608e27ef9a7602f3"
+  integrity sha512-UYEMIrzegR02pauH7gVMI7j6cUroTtJug6dH/aQFjMNz0UwZe6GUcrEtJDmsUHJjEZdxbYgHhaiIwswWVo0CMA==
+
 "@expo/bunyan@^4.0.0":
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/@expo/bunyan/-/bunyan-4.0.1.tgz#ab9e17e36c71c704a0ce72168378a487368da736"
