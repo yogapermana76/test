@@ -13,6 +13,13 @@ import { useInitialRootStore } from '@/models';
 import { customFontsToLoad } from '@/theme';
 import { queryClient } from '@/utils/third-party';
 
+if (__DEV__) {
+  // Load Reactotron in development only.
+  // Note that you must be using metro's `inlineRequires` for this to work.
+  // If you turn it off in metro.config.js, you'll have to manually import it.
+  require('../devtools/ReactotronConfig');
+}
+
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
 
