@@ -1,12 +1,14 @@
 import { Instance, SnapshotOut, types } from 'mobx-state-tree';
-import { AuthenticationStoreModel } from './AuthenticationStore';
+import { AuthStoreModel } from './AuthStore';
 import { ThemeStoreModel } from './ThemeStore';
+import { UserStoreModel } from './UserStore';
 
 /**
  * A RootStore model.
  */
 export const RootStoreModel = types.model('RootStore', {
-  authenticationStore: types.optional(AuthenticationStoreModel, {}),
+  authStore: types.optional(AuthStoreModel, {}),
+  userStore: types.optional(UserStoreModel, {}),
   themeStore: types.optional(ThemeStoreModel, { theme: 'default' }),
 });
 

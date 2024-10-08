@@ -1,7 +1,9 @@
+import { saveString } from '@/utils/storage';
 import { Instance, SnapshotOut, types } from 'mobx-state-tree';
+import { withSetPropAction } from './helpers/withSetPropAction';
 
-export const AuthenticationStoreModel = types
-  .model('AuthenticationStore')
+export const AuthStoreModel = types
+  .model('AuthStore')
   .props({
     authToken: types.maybe(types.string),
     authEmail: '',
@@ -23,7 +25,12 @@ export const AuthenticationStoreModel = types
       return '';
     },
   }))
+  .actions(withSetPropAction)
   .actions((store) => ({
+    login(token: string) {
+      saveString('authToken', token);
+      store.setProp('authToken', token);
+    },
     setAuthToken(value?: string) {
       store.authToken = value;
     },
@@ -36,7 +43,5 @@ export const AuthenticationStoreModel = types
     },
   }));
 
-export interface AuthenticationStore
-  extends Instance<typeof AuthenticationStoreModel> {}
-export interface AuthenticationStoreSnapshot
-  extends SnapshotOut<typeof AuthenticationStoreModel> {}
+export interface AuthStore extends Instance<typeof AuthStoreModel> {}
+export interface AuthStoreSnapshot extends SnapshotOut<typeof AuthStoreModel> {}
