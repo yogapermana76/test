@@ -17,7 +17,7 @@ import { QueryClientProvider } from '@tanstack/react-query';
 import { useColorScheme } from '@/hooks/useColorScheme';
 import { useInitialRootStore } from '@/models';
 import { customFontsToLoad } from '@/theme';
-import { queryClient } from '@/utils/third-party';
+import { queryClient } from '@/libs';
 
 if (__DEV__) {
   // Load Reactotron in development only.
