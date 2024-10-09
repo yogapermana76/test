@@ -1,4 +1,3 @@
-// import { colors } from "_theme/index"
 import { ComponentType, useMemo } from 'react';
 import { IconProps } from './Icon.types';
 import { IconImage } from './Image';
