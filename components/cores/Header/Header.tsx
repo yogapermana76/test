@@ -17,6 +17,7 @@ import { ReanimatedView } from '@/components/animations';
 import { Row } from '../Container';
 import { createIconProps, Icon } from '../Icon';
 import { isRTL } from '@/i18n';
+import { IconSvgType } from '../Icon/Svg';
 
 /**
  * Header that appears on many screens. Will hold navigation buttons and screen title.
@@ -148,6 +149,8 @@ function HeaderAction(props: HeaderActionProps) {
           { backgroundColor },
           isRTL && { transform: [{ rotate: '180deg' }] },
         ]}
+        preset="svg"
+        name={iconProps?.name as IconSvgType}
         {...iconProps}
       />
     );
